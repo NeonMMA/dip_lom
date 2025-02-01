@@ -1,0 +1,7 @@
+.window {
+    width: 100%;
+    flex-grow: 1; /* Занимает всё доступное пространство между header и footer */
+    /* position: relative; Заменяем absolute на relative */
+    margin: 0;
+    display:flex;
+}
