@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #011314;
+    border-bottom: 1px solid #28858a;
+    flex-shrink: 0; /* Не даем header сжиматься */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: aqua;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 14px;
+    color: aqua;
+    transition: color 0.3s;
+}
+
+.navigation a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #e41b17; /* Красная линия под активным пунктом */
+}
+
+.navigation a:hover {
+    color: #e41b17;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.header-icons img:hover {
+    transform: scale(1.1);
+}

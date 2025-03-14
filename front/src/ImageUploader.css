@@ -1,0 +1,31 @@
+.download_div {
+    margin-top: 20px;
+    min-height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.left_div {
+    margin-bottom: 20px;
+}
+
+.left.row {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;  /* Например, 500px */
+    height: 500px;
+    overflow: hidden; /* Чтобы изображение не выходило за пределы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down.left.row {
+    bottom: 0;
+    position: relative;
+    /* flex-grow: 1; */
+    display: flex;
+    background-color: aqua;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
