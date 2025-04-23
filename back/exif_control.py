@@ -24,6 +24,13 @@ def getExif(file_bytes):
     return res
 
 
+def setExif(file_bytes, exif_dict):
+    exif_image = ExifImage(file_bytes)
+    if exif_image.has_exif:
+        exif_image.delete_all()
+    exif_image.set(exif_dict) # хуй знает, наверное так, надо еще подумать как возвращать
+    return exif_image
+
 def checkHEIC(path="./test_image_files/2.HEIC"):
     heic_image = Image.open(path)
     # print((heic_image.info["exif"]))
